@@ -1,0 +1,44 @@
+<div class="<%= className %>">
+	<div class="weui-mask"></div>
+	<div class="weui-product-select">
+	    <div class="weui-product-select__title">
+		    <div class="weui-product-select__thumb">
+		        <img class="weui-product-select__src" src="<%=selects[index].thumb%>" alt="" style="width:100px;height:100px;"/>
+		    </div>
+		    <div style="margin:20px 0 0 128px;">
+		        <p class="weui-product-select__price">￥<%=selects[index].price%></p>
+		        <p>
+		        	商品编号:<%=number%>	
+		        </p>
+		    </div>
+		</div>
+		<div class="weui-product-select__body">
+		    <p class="weui-product-select__item_hd">
+		    	已选
+		    	<span style="float:right;">
+		    		<span>库存:</span><span class="weui-product-select__stock"><%=selects[index].stock%></span>
+		    	</span>
+		    </p>
+		    <p class="weui-product-select__item">
+		     <% for(var i = 0; i < selects.length; i++){ %>
+		     	<% if(index==i){ %>
+            		<span class="select-option standard-select-red"><%=selects[i].option%></span>
+            	<% }else{ %>
+					<span class="select-option"><%=selects[i].option%></span>
+				<%}%>
+            <% } %>
+		    </p>
+		    <div class="weui-product-select__item">
+		        <span>数量</span>
+		        <div class="weui-price__content" style="display: inline-block;float:right;padding-right: 10px;">
+			    	<span class="weui-product-select__plus">-</span>
+			    	<input type='text' class="weui-product-select__count" value='1' />
+			    	<span class="weui-product-select__add">+</span>
+			    </div>
+		    </div>
+		    <p>
+		        <a href="javascript:;" class="weui-addin weui-btn weui-btn_warn" style="border-radius: 0;">加入购物车</a>
+		    </p>
+		</div>
+	</div>
+</div>
