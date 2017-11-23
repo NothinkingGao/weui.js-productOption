@@ -1,5 +1,5 @@
 #### 扩展weui.js,实现电商网站加入购物车时对商品型号,数量的选择功能组件
-![Alt text](git@github.com:NothinkingGao/weui.js-productOption.git/Screenshots/1.png)
+![Alt text](https://github.com/NothinkingGao/weui.js-productOption/tree/master/Screenshots/1.png)
 #### 使用方法
 1. 安装weui.js
 ```
